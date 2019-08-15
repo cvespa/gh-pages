@@ -31,3 +31,19 @@
     transform: rotate(360deg);
   }
 }
+
+div.social-media-list > ul {
+  list-style-type: none;
+  padding: initial;
+}
+
+div.social-media-list > ul > li {
+  display:inline;
+  margin: 5px;
+}
+
+div.social-media-list > ul > li > a {
+  color: inherit; 
+}
+
+
