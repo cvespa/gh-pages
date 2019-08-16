@@ -32,18 +32,25 @@
   }
 }
 
-div.social-media-list > ul {
-  list-style-type: none;
-  padding: initial;
+div[data-parent] {
+  width: 100%;
 }
 
-div.social-media-list > ul > li {
-  display:inline;
-  margin: 5px;
+div[data-parent] > div[data-headers] > div[data-child].active {
+  color: gray;
 }
 
-div.social-media-list > ul > li > a {
-  color: inherit; 
+div[data-parent] > div[data-headers] > div[data-child] {
+  border: 1px solid black;
+  display: inline;
+  margin: 5%;
 }
 
+div[data-parent] > div[data-child].active {
+  display: block;
+}
 
+div[data-parent] > div[data-child] {
+  display: none;
+  margin: 5%;
+}

@@ -3,9 +3,10 @@ import logo from './logo.svg';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import SocialMediaList from './SocialMediaList.js'
+import MainContainer from './MainContainer';
 import './App.css';
 
-library.add(fab)
+library.add(fab);
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           Learn React
         </a>
+
+        <MainContainer />
 
         <SocialMediaList instagram="bpotacon" github="cvespa" />
       </header>

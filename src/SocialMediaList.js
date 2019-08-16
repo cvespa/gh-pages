@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import './SocialMediaList.css';
 
 class SocialMediaList extends React.Component {
     constructor(props) {
@@ -26,10 +27,10 @@ class SocialMediaList extends React.Component {
         }
     }
 
-    renderSocialMediaLink(href, image) {
+    renderSocialMediaLink(href, icon) {
         return (
             <a href={href} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={["fab", image]} />
+                <FontAwesomeIcon icon={["fab", icon]} />
             </a>
         )
     }
@@ -43,7 +44,7 @@ class SocialMediaList extends React.Component {
                 let social = socials[i];
                 if (social !== undefined && social !== null) {
                     //Create the item add the link
-                    items.push(<li>
+                    items.push(<li key={i}>
                         {this.renderSocialMediaLink(social.link, social.icon)}
                     </li>)
                 }
