@@ -1,0 +1,9 @@
+div.in-game-name-list {
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+div.in-game-name-list > ul {
+    list-style-type: none;
+    padding: initial;
+}
