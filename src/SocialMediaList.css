@@ -9,5 +9,10 @@ div.social-media-list > ul > li {
 }
 
 div.social-media-list > ul > li > a {
-    color: inherit; 
+    color: inherit;
+}
+
+div.social-media-list > ul > li > a > img.game {
+    width: 0.875em;
+    vertical-align: -0.125em;
 }
