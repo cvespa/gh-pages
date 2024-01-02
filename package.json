@@ -11,7 +11,7 @@
     "@fortawesome/react-fontawesome": "^0.1.11",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-scripts": "^4.0.0"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "@babel/plugin-proposal-private-property-in-object": "7.21.0-placeholder-for-preset-env.2"
   }
 }
